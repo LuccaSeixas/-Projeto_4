@@ -1,0 +1,30 @@
+@use 'variaveis';
+.header{
+    background-color: variaveis.$corBackgroundHeader;
+    
+
+    &__container{
+        padding: 8px 36px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo{
+        max-height: 52px;
+        height: 100%;
+    }
+
+    &__links{
+        display: flex;
+
+        &__item{
+            font-size: 24px;
+            margin-left: 12px;
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+}

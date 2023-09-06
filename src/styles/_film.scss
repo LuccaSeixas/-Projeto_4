@@ -1,0 +1,12 @@
+.film__list{
+    color: red;
+    &__list{
+
+        &__item{
+            img{
+                max-width: 240px;
+            }
+        }
+
+    }
+}
