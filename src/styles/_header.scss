@@ -1,7 +1,7 @@
 @use 'variaveis';
 .header{
     background-color: variaveis.$corBackgroundHeader;
-    
+    padding: 0 120px;
 
     &__container{
         padding: 8px 36px;

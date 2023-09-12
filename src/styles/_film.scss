@@ -1,12 +1,22 @@
-.film__list{
-    color: red;
+.film{
+    padding: 20px 120px;
+    
     &__list{
+        margin-top: 24px;
+        display: flex;
+        justify-content: space-between;
 
         &__item{
+            max-width: 45%;
+            margin-right: 24px;
+            flex-wrap: wrap;
+
             img{
-                max-width: 240px;
+                overflow-y: hidden;
             }
         }
 
+
     }
+
 }

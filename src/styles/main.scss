@@ -3,10 +3,17 @@
 @use 'inicio';
 @use 'film';
 
+@font-face{
+    font-family: Toruk;
+    src: url(../../assets/fonts/torukscregular-z8ma1.ttf);
+    font-weight: 400;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Toruk, sans-serif;
     list-style: none;
 }
 
@@ -34,6 +41,14 @@ body{
     }
 }
 
+.text--big{
+    @include text(18px);
+
+    @media(max-width:768px){
+        @include text(15px);
+    }
+}
+
 .title{
     @include title;
 
@@ -42,6 +57,3 @@ body{
     }
 }
 
-.container{
-    max-width: 1600px;
-}
