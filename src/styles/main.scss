@@ -1,6 +1,6 @@
 @use 'header';
 @use 'variaveis';
-@use 'inicio';
+@use 'initial';
 @use 'film';
 
 @font-face{
@@ -42,7 +42,9 @@ body{
 }
 
 .text--big{
-    @include text(18px);
+    @include text(20px);
+    font-size: bold;
+    color: variaveis.$corTextoSecundario;
 
     @media(max-width:768px){
         @include text(15px);
@@ -57,3 +59,11 @@ body{
     }
 }
 
+.divider{
+    margin: 18px 0;
+    display: flex;
+    justify-content: center;
+    img{
+        height: 70px;
+    }
+}

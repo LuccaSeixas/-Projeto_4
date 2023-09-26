@@ -1,0 +1,19 @@
+.initial{
+    padding: 0 120px;
+
+    &__img{
+        margin-bottom: 12px;
+        img{
+            max-width: 1600px;
+            width: 100%;
+            height: 750px;
+            background-size: cover;
+        }
+    }
+
+    &__text{
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+}
