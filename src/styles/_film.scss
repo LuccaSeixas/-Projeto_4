@@ -1,24 +1,41 @@
-.film{
+.film {
     padding: 0 120px;
+    position: relative;
     
-    &__list{
+    &__list {
         margin-top: 24px;
         display: grid;
         gap: 32px;
         grid-template-columns: repeat(3, 1fr);
-        
 
-        &__item{
+        &__item {
             width: 100%;
             height: 290px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        h3 {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: white;
+            z-index: 1; 
         }
     }
 
-    img{
-    padding: 5.6vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
+    .teste {
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
-
 }
