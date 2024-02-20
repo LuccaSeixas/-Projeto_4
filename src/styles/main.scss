@@ -3,6 +3,7 @@
 @use 'initial';
 @use 'film';
 @use 'news';
+@use 'footer';
 
 @font-face{
     font-family: Toruk;
@@ -26,7 +27,7 @@ body{
 @mixin text($fontSize: 16px){
     font-size: $fontSize;
     line-height: $fontSize + 10px;
-    color: variaveis.$corTextoPrincipal;
+    color: variaveis.$corTextoSecundario;
 }
 
 @mixin title($fontSize: 40px){
@@ -34,11 +35,21 @@ body{
     color: variaveis.$corTextoSecundario
 }
 
-.text{
+.text--small{
     @include text;
+    @include text(14px);
 
     @media(max-width:768px){
-        @include text(14px);
+        @include text(16px);
+    }
+}
+
+.text{
+    @include text;
+    color: variaveis.$corTexto;
+
+    @media(max-width:768px){
+        @include text(18px);
     }
 }
 
@@ -48,7 +59,7 @@ body{
     color: variaveis.$corTextoSecundario;
 
     @media(max-width:768px){
-        @include text(15px);
+        @include text(20px);
     }
 }
 
@@ -56,7 +67,7 @@ body{
     @include title;
 
     @media(max-width:768px){
-        @include title(24px);
+        @include title(32px);
     }
 }
 
@@ -66,5 +77,9 @@ body{
     justify-content: center;
     img{
         height: 70px;
+    }
+
+    @media(max-width:768px){
+        height: auto;
     }
 }

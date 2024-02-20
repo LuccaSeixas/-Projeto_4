@@ -1,7 +1,12 @@
 @use 'variaveis';
+
 .header{
     background-color: variaveis.$corBackgroundHeader;
     padding: 0 120px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2;
 
     &__container{
         padding: 8px 36px;
