@@ -36,17 +36,18 @@ body{
 }
 
 .text--small{
-    @include text;
     @include text(14px);
+    color: variaveis.$corTexto;
 
     @media(max-width:768px){
         @include text(16px);
+        color: variaveis.$corTexto;
     }
 }
 
 .text{
     @include text;
-    color: variaveis.$corTexto;
+    color: variaveis.$corTextoSecundario;
 
     @media(max-width:768px){
         @include text(18px);
@@ -75,11 +76,24 @@ body{
     margin: 18px 0;
     display: flex;
     justify-content: center;
+    
     img{
         height: 70px;
     }
 
     @media(max-width:768px){
         height: auto;
+    }
+}
+
+.container{
+    padding: 0 120px;
+    margin-bottom: 32px;
+
+    @media(max-width:768px){
+        padding: 0;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }

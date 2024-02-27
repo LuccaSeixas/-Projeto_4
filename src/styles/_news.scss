@@ -1,9 +1,12 @@
 @use 'variaveis';
 
 .news{
-    padding: 0 120px;
     position: relative;
     margin-top: 214px;
+
+    @media(max-width:768px){
+        margin-top: 108px;
+    }
 
     &__list{
         margin-top: 24px;

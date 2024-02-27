@@ -1,6 +1,9 @@
 .film {
-    padding: 0 120px;
     position: relative;
+    
+    @media(max-width:768px){
+        padding: 0;
+        }
     
     &__list {
         margin-top: 24px;
@@ -54,7 +57,9 @@
 
         @media(max-width:768px){
             position: absolute;
+            width: 115%;
             top: 100%;
+            left: -5vw;
             height: auto;
         }
     }

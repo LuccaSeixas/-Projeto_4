@@ -3,8 +3,9 @@
 .footer{
     padding-top: 50px;
 
-    &__container{
-
+    @media(max-width:768px){
+        background-color: black;
+        padding: 0;
     }
 
     &__links{
@@ -17,15 +18,28 @@
         flex-wrap: wrap;
         justify-content: center;
 
+        @media(max-width:768px){
+            width: 100%;
+        }
+
         &__item{
             display: inline-block;
             margin-top: 14px;
+            z-index: 2;
+
+            @media(max-width:768px){
+            margin: 0;
+            }
         }
 
         a{
             text-decoration: none;
             padding: 8px 16px;
             display: block;
+
+            @media(max-width:768px){
+                padding: 0;
+            }
 
             &:hover{
                 color: variaveis.$corBackground;
@@ -35,19 +49,29 @@
 
     &__background {
         position: absolute;
-        z-index: -1;
+        z-index: 1;
         width: 100%;
         background-size: cover;
+
+        @media(max-width:768px){
+            position: relative;
+        }
     }
 
     p{
         margin-bottom: 16px;
     }
+
+    
 }
 
 .language-selector {
     display: flex;
     align-items: center;
+
+    @media(max-width:768px){
+        margin-right: 18px;
+    }
 
     img{
         height: 18px;
